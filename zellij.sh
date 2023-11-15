@@ -46,3 +46,10 @@ echo "eval "$(zoxide init zsh)"" >> ~/.zshrc
 # zi foo             # cd with interactive selection (using fzf)
 
 # z foo<SPACE><TAB>  # show interactive completions (zoxide v0.8.0+, bash 4.4+/fish/zsh only)
+
+
+# Magical shell history
+# https://github.com/atuinsh/atuin
+brew install atuin
+echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
+atuin import zsh
