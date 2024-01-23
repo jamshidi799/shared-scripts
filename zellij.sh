@@ -4,7 +4,7 @@ brew install zellij
 
 brew install alacritty
 echo "window:
-  option_as_alt: Bot" >> ~/.config/alacritty/alacritty.yml
+  option_as_alt: Both" >> ~/.config/alacritty/alacritty.yml
 
 brew install helix
 
@@ -26,7 +26,7 @@ $(brew --prefix)/opt/fzf/install
 https://github.com/eza-community/eza
 brew install eza
 echo "unalias ls
-alias ls='exa -al --color=always --group-directories-first'" >> ~/.zshrc
+alias ls='eza -al --color=always --group-directories-first'" >> ~/.zshrc
 
 # A smarter cd command. Supports all major shells.
 # https://github.com/ajeetdsouza/zoxide
@@ -52,4 +52,3 @@ echo "eval "$(zoxide init zsh)"" >> ~/.zshrc
 # https://github.com/atuinsh/atuin
 brew install atuin
 echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
-atuin import zsh
